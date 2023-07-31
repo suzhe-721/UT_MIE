@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c265fe655d22a4f239d7931bc99c8f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3c265fe655d22a4f239d7931bc99c8f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3c265fe655d22a4f239d7931bc99c8f5 = L.map(
+                "map_3c265fe655d22a4f239d7931bc99c8f5",
+                {
+                    center: [43.897095, -78.865791],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3dea96890c5a9aa9a6844a1dfafe5bd9 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+            var circle_marker_7cb9979e5083139336d5049380e21147 = L.circleMarker(
+                [43.8751157, -78.877595],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_b397494dfe2d3e8412f04c9ad41eb182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03c7ed78c131242fdb107a3531ec5fa8 = $(`<div id="html_03c7ed78c131242fdb107a3531ec5fa8" style="width: 100.0%; height: 100.0%;"><b>3.713675213675214</b></div>`)[0];
+                popup_b397494dfe2d3e8412f04c9ad41eb182.setContent(html_03c7ed78c131242fdb107a3531ec5fa8);
+            
+        
+
+        circle_marker_7cb9979e5083139336d5049380e21147.bindPopup(popup_b397494dfe2d3e8412f04c9ad41eb182)
+        ;
+
+        
+    
+    
+            circle_marker_7cb9979e5083139336d5049380e21147.bindTooltip(
+                `<div>
+                     <b>Best Western Plus Durham Hotel &amp; Conference Centre</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffebdb111475f782d62d3738ca6328d9 = L.circleMarker(
+                [43.87510428683759, -78.87847771479021],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_9f874cd47ac4b8e93bfbafa3ca0a3128 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a7744f955a64746bceed7416ca14eea = $(`<div id="html_7a7744f955a64746bceed7416ca14eea" style="width: 100.0%; height: 100.0%;"><b>3.354609929078014</b></div>`)[0];
+                popup_9f874cd47ac4b8e93bfbafa3ca0a3128.setContent(html_7a7744f955a64746bceed7416ca14eea);
+            
+        
+
+        circle_marker_ffebdb111475f782d62d3738ca6328d9.bindPopup(popup_9f874cd47ac4b8e93bfbafa3ca0a3128)
+        ;
+
+        
+    
+    
+            circle_marker_ffebdb111475f782d62d3738ca6328d9.bindTooltip(
+                `<div>
+                     <b>Comfort Inn</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd3d4b5e9bfa73a92ae8d87d7ace14dd = L.circleMarker(
+                [43.88894, -78.81931],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_ea8ad6c9ef77519bc5ebe6ad59388578 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d8fc49790537ef1ef823817ef03d9f8 = $(`<div id="html_2d8fc49790537ef1ef823817ef03d9f8" style="width: 100.0%; height: 100.0%;"><b>4.05</b></div>`)[0];
+                popup_ea8ad6c9ef77519bc5ebe6ad59388578.setContent(html_2d8fc49790537ef1ef823817ef03d9f8);
+            
+        
+
+        circle_marker_cd3d4b5e9bfa73a92ae8d87d7ace14dd.bindPopup(popup_ea8ad6c9ef77519bc5ebe6ad59388578)
+        ;
+
+        
+    
+    
+            circle_marker_cd3d4b5e9bfa73a92ae8d87d7ace14dd.bindTooltip(
+                `<div>
+                     <b>Courtyard by Marriott Oshawa</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a9f7b1e61b87778afeb944db63c75a56 = L.circleMarker(
+                [43.9440969, -78.89182464560105],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_cff97791da005168389f9cb48dd1e9da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_030d58eb64a4fe29a388b8ec2bdeaba2 = $(`<div id="html_030d58eb64a4fe29a388b8ec2bdeaba2" style="width: 100.0%; height: 100.0%;"><b>2.8333333333333335</b></div>`)[0];
+                popup_cff97791da005168389f9cb48dd1e9da.setContent(html_030d58eb64a4fe29a388b8ec2bdeaba2);
+            
+        
+
+        circle_marker_a9f7b1e61b87778afeb944db63c75a56.bindPopup(popup_cff97791da005168389f9cb48dd1e9da)
+        ;
+
+        
+    
+    
+            circle_marker_a9f7b1e61b87778afeb944db63c75a56.bindTooltip(
+                `<div>
+                     <b>Durham College Simcoe Village Residence</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7cf2edb3131d293dab383d545c79334 = L.circleMarker(
+                [43.89682201527778, -78.88481722083334],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_6adf731683812367c04e8fb11618ef40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57894c32cf09e12fd59f6f95a3511ac8 = $(`<div id="html_57894c32cf09e12fd59f6f95a3511ac8" style="width: 100.0%; height: 100.0%;"><b>4.25</b></div>`)[0];
+                popup_6adf731683812367c04e8fb11618ef40.setContent(html_57894c32cf09e12fd59f6f95a3511ac8);
+            
+        
+
+        circle_marker_e7cf2edb3131d293dab383d545c79334.bindPopup(popup_6adf731683812367c04e8fb11618ef40)
+        ;
+
+        
+    
+    
+            circle_marker_e7cf2edb3131d293dab383d545c79334.bindTooltip(
+                `<div>
+                     <b>Emerson Manor</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23e8fcfdccd9f3ddc78e9d72fa1bfded = L.circleMarker(
+                [43.92455643079367, -78.87337562400035],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_390ef333a96cc2b6e6fd90f7a8f4da6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79b1f5230f30397f13167beced90bd0e = $(`<div id="html_79b1f5230f30397f13167beced90bd0e" style="width: 100.0%; height: 100.0%;"><b>4.246913580246914</b></div>`)[0];
+                popup_390ef333a96cc2b6e6fd90f7a8f4da6e.setContent(html_79b1f5230f30397f13167beced90bd0e);
+            
+        
+
+        circle_marker_23e8fcfdccd9f3ddc78e9d72fa1bfded.bindPopup(popup_390ef333a96cc2b6e6fd90f7a8f4da6e)
+        ;
+
+        
+    
+    
+            circle_marker_23e8fcfdccd9f3ddc78e9d72fa1bfded.bindTooltip(
+                `<div>
+                     <b>Holiday Inn Express &amp; Suites Oshawa Downtown - Toronto Area, an IHG Hotel</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca26d7e24dd5f65bede664b4f2ac0c13 = L.circleMarker(
+                [43.8681618, -78.9336141],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_8e7916468eab555a7a6247f6ef615d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_483b9091c004d9fc00a7d9751756e889 = $(`<div id="html_483b9091c004d9fc00a7d9751756e889" style="width: 100.0%; height: 100.0%;"><b>3.7853658536585364</b></div>`)[0];
+                popup_8e7916468eab555a7a6247f6ef615d58.setContent(html_483b9091c004d9fc00a7d9751756e889);
+            
+        
+
+        circle_marker_ca26d7e24dd5f65bede664b4f2ac0c13.bindPopup(popup_8e7916468eab555a7a6247f6ef615d58)
+        ;
+
+        
+    
+    
+            circle_marker_ca26d7e24dd5f65bede664b4f2ac0c13.bindTooltip(
+                `<div>
+                     <b>Holiday Inn Express Whitby Oshawa, an IHG Hotel</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19dcd16e633f7804b2b8ff5b2fe6ac8b = L.circleMarker(
+                [43.89826615625, -78.86096840625],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_c3f1c5fbe3a3618c27006d1c363ea90d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65ed7b222c79f0d9e882de3e1f6a53ae = $(`<div id="html_65ed7b222c79f0d9e882de3e1f6a53ae" style="width: 100.0%; height: 100.0%;"><b>3.7620087336244543</b></div>`)[0];
+                popup_c3f1c5fbe3a3618c27006d1c363ea90d.setContent(html_65ed7b222c79f0d9e882de3e1f6a53ae);
+            
+        
+
+        circle_marker_19dcd16e633f7804b2b8ff5b2fe6ac8b.bindPopup(popup_c3f1c5fbe3a3618c27006d1c363ea90d)
+        ;
+
+        
+    
+    
+            circle_marker_19dcd16e633f7804b2b8ff5b2fe6ac8b.bindTooltip(
+                `<div>
+                     <b>La Quinta Inn &amp; Suites Oshawa</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_243696733fcf92803d8582589d7a3b6e = L.circleMarker(
+                [43.88117, -78.94447],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_7cfb97fdcc82988e2a8a0e1f5d3c82a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a9ea2d7cfd56a33c829efe691482344 = $(`<div id="html_6a9ea2d7cfd56a33c829efe691482344" style="width: 100.0%; height: 100.0%;"><b>3.9523809523809526</b></div>`)[0];
+                popup_7cfb97fdcc82988e2a8a0e1f5d3c82a5.setContent(html_6a9ea2d7cfd56a33c829efe691482344);
+            
+        
+
+        circle_marker_243696733fcf92803d8582589d7a3b6e.bindPopup(popup_7cfb97fdcc82988e2a8a0e1f5d3c82a5)
+        ;
+
+        
+    
+    
+            circle_marker_243696733fcf92803d8582589d7a3b6e.bindTooltip(
+                `<div>
+                     <b>Lucien Motel</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_18514390a1f60110823e566a72d27839 = L.circleMarker(
+                [43.86817840335066, -78.9315129714254],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_77ac00d68cbda2756dbf88e073170b0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b6f9a5c6533a82863d3ab46e5fafebc = $(`<div id="html_2b6f9a5c6533a82863d3ab46e5fafebc" style="width: 100.0%; height: 100.0%;"><b>2.7819148936170213</b></div>`)[0];
+                popup_77ac00d68cbda2756dbf88e073170b0b.setContent(html_2b6f9a5c6533a82863d3ab46e5fafebc);
+            
+        
+
+        circle_marker_18514390a1f60110823e566a72d27839.bindPopup(popup_77ac00d68cbda2756dbf88e073170b0b)
+        ;
+
+        
+    
+    
+            circle_marker_18514390a1f60110823e566a72d27839.bindTooltip(
+                `<div>
+                     <b>Motel 6 Toronto East - Whitby</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2763732d9ff51e79e00ca3f03f69e891 = L.circleMarker(
+                [43.926792326774766, -78.8582291217752],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_0dc52736ce8c33cff85408fbd3fe4001 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b743ca40156423f3608e36261615fe4 = $(`<div id="html_2b743ca40156423f3608e36261615fe4" style="width: 100.0%; height: 100.0%;"><b>4.815789473684211</b></div>`)[0];
+                popup_0dc52736ce8c33cff85408fbd3fe4001.setContent(html_2b743ca40156423f3608e36261615fe4);
+            
+        
+
+        circle_marker_2763732d9ff51e79e00ca3f03f69e891.bindPopup(popup_0dc52736ce8c33cff85408fbd3fe4001)
+        ;
+
+        
+    
+    
+            circle_marker_2763732d9ff51e79e00ca3f03f69e891.bindTooltip(
+                `<div>
+                     <b>Paddington Place Bed &amp; Breakfast</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_56470203797a4b1a6cf68b305c7687c1 = L.circleMarker(
+                [43.8706863315104, -78.90312257561227],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_f586efbeea503c2dbd60677c6beec026 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30465e46120fa3f278c909e254280925 = $(`<div id="html_30465e46120fa3f278c909e254280925" style="width: 100.0%; height: 100.0%;"><b>3.657142857142857</b></div>`)[0];
+                popup_f586efbeea503c2dbd60677c6beec026.setContent(html_30465e46120fa3f278c909e254280925);
+            
+        
+
+        circle_marker_56470203797a4b1a6cf68b305c7687c1.bindPopup(popup_f586efbeea503c2dbd60677c6beec026)
+        ;
+
+        
+    
+    
+            circle_marker_56470203797a4b1a6cf68b305c7687c1.bindTooltip(
+                `<div>
+                     <b>Quality Suites</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81154596e796a5c937f58f2130039dbf = L.circleMarker(
+                [43.9423678, -78.8974092],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_51479e56c3181ac767a4364918cd3d05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fa6bb9b7cd02e058b1e8ddcc2adf5ba = $(`<div id="html_8fa6bb9b7cd02e058b1e8ddcc2adf5ba" style="width: 100.0%; height: 100.0%;"><b>3.878787878787879</b></div>`)[0];
+                popup_51479e56c3181ac767a4364918cd3d05.setContent(html_8fa6bb9b7cd02e058b1e8ddcc2adf5ba);
+            
+        
+
+        circle_marker_81154596e796a5c937f58f2130039dbf.bindPopup(popup_51479e56c3181ac767a4364918cd3d05)
+        ;
+
+        
+    
+    
+            circle_marker_81154596e796a5c937f58f2130039dbf.bindTooltip(
+                `<div>
+                     <b>Residence &amp; Conference Centre - Oshawa</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4aaa9e882f65aec0759cbf7ee6090123 = L.circleMarker(
+                [43.8681796, -78.9309142],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_c988ec43268c981135af4336a7f97ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90cd92c8abdd198c94aba9349708deb1 = $(`<div id="html_90cd92c8abdd198c94aba9349708deb1" style="width: 100.0%; height: 100.0%;"><b>3.893292682926829</b></div>`)[0];
+                popup_c988ec43268c981135af4336a7f97ac4.setContent(html_90cd92c8abdd198c94aba9349708deb1);
+            
+        
+
+        circle_marker_4aaa9e882f65aec0759cbf7ee6090123.bindPopup(popup_c988ec43268c981135af4336a7f97ac4)
+        ;
+
+        
+    
+    
+            circle_marker_4aaa9e882f65aec0759cbf7ee6090123.bindTooltip(
+                `<div>
+                     <b>Residence Inn by Marriott Whitby</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85f62ac3b7f1e0862a81e55c1534309f = L.circleMarker(
+                [43.88876, -78.81897],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_60bb701d8fcbcbd875ad102787231b96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3bbd1899c5d557801d35178ed28ed8d = $(`<div id="html_d3bbd1899c5d557801d35178ed28ed8d" style="width: 100.0%; height: 100.0%;"><b>3.5625</b></div>`)[0];
+                popup_60bb701d8fcbcbd875ad102787231b96.setContent(html_d3bbd1899c5d557801d35178ed28ed8d);
+            
+        
+
+        circle_marker_85f62ac3b7f1e0862a81e55c1534309f.bindPopup(popup_60bb701d8fcbcbd875ad102787231b96)
+        ;
+
+        
+    
+    
+            circle_marker_85f62ac3b7f1e0862a81e55c1534309f.bindTooltip(
+                `<div>
+                     <b>TownePlace Suites Oshawa</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_954dff9baef55886ae083826df2b406c = L.circleMarker(
+                [43.8767061, -78.8779473],
+                {"bubblingMouseEvents": true, "color": "#d7191c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d7191c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3c265fe655d22a4f239d7931bc99c8f5);
+        
+    
+        var popup_9d615736726cb35310bf902f3cf377b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca0464f2fd0f70451d1b3b9148a50e94 = $(`<div id="html_ca0464f2fd0f70451d1b3b9148a50e94" style="width: 100.0%; height: 100.0%;"><b>3.310668229777257</b></div>`)[0];
+                popup_9d615736726cb35310bf902f3cf377b5.setContent(html_ca0464f2fd0f70451d1b3b9148a50e94);
+            
+        
+
+        circle_marker_954dff9baef55886ae083826df2b406c.bindPopup(popup_9d615736726cb35310bf902f3cf377b5)
+        ;
+
+        
+    
+    
+            circle_marker_954dff9baef55886ae083826df2b406c.bindTooltip(
+                `<div>
+                     <b>Travelodge Oshawa Whitby</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
